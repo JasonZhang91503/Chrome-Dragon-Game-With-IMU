@@ -20,6 +20,7 @@ Google 離線狀態的情況下會出現一個可愛的恐龍遊戲，本專案�
     Compile LSM9DS0
     ```
     g++ -shared -fPIC -o 1sm9ds0.so 1sm9ds0.cpp
+    g++ -shared -fPIC -o gpio.so gpio.cpp
     ```
 
 
@@ -34,5 +35,18 @@ Google 離線狀態的情況下會出現一個可愛的恐龍遊戲，本專案�
     Python dependency
     ```
     pip install websockets
-    pip install
+    pip install pyautogui
     ```
+
+## Usage
+* **BeagleBone Black**
+    ```
+    python3 websocket.py
+    ```
+
+* **LocalMachine**
+    ```
+    python3 control.py
+    ```
+
+    > 記得最後要打開恐龍跑者網頁，然後晃動LSM9DS0歐
